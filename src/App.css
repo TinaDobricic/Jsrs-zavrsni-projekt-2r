@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(21, 55, 105);
+}
+
+
+
+/* header i navigacija */
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(./img/heder.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.navigacija {
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    font-weight: bold;
+}
+
+.nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    font-size: large;
+}
+
+@media screen and (max-width: 730px) {
+    .nav a {
+        font-size: small;
+    }
+}
+
+.nav a:hover {
+    color: goldenrod;
+}
+
+#logo {
+    width: 60px;
+}
+
+.logo h2 {
+    float: right;
+    padding-left: 5px;
+}
+
+.centartxt {
+    color: goldenrod;
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+#nas {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+.centartxt a {
+    margin-top: 50px;
+    background-color: rgb(238, 234, 228);
+    font-size: 25px;
+    padding: 9px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: 1s;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.centartxt a:hover {
+    background-color: rgba(218, 165, 32, 0.967);
+    color: white;
+}
+
+@media screen and (max-width: 495px) {
+    .centartxt {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .centartxt a {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+}
+
+
+/* about */
+.Maliabout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+}
+
+.textaboutmali {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.naslovi {
+    color: goldenrod;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textaboutmali p {
+    color: whitesmoke;
+    width: 40%;
+    text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+    .textaboutmali p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .textaboutmali p {
+        width: 100%;
+    }
+}
+
+/* courses*/
+.Tecaji {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.kartice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.kartice img {
+    width: 100%;
+    opacity: 0.75;
+}
+
+
+.prva,
+.druga,
+.treca {
+    width: 30%;
+    position: relative;
+}
+
+.druga {
+    margin: 0 10px;
+}
+
+.textic {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    width: 70%;
+    color: whitesmoke;
+    margin: 0 0 70px;
+}
+
+.textic p {
+    margin-bottom: 20px;
+}
+
+.malibtn {
+    background-color: rgb(238, 234, 228);
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.malibtn:hover {
+    background-color: rgba(238, 234, 228, 0.455);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .prva,
+    .druga,
+    .treca {
+        width: 100%;
+    }
+
+    .druga {
+        margin: 0px;
+    }
+}
+
+/* uredenje*/
+.uredenje {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(./img/urede.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.uredenje h1 {
+    width: 50%;
+    color: rgba(245, 245, 245, 0.739);
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .uredenje h1 {
+        width: 80%;
+        font-size: 30px;
+    }
+}
+
+
+
+/* Kontakt i book */
+.Book {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact {
+    width: 30%;
+    margin-top: 100px;
+    text-align: center;
+    font-size: large;
+}
+
+.contacttext{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.book {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+#bknas{ color: goldenrod; font-family: 'Montserrat', sans-serif;}
+
+/* forma */
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: rgb(21, 55, 105);
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(21, 55, 105);
+    color: whitesmoke;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: whitesmoke;
+    border: none;
+    color: goldenrod;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%;
+    transition: 0.5s;
+}
+input[type=submit]:hover{
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+input[type=reset]:hover {
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+::placeholder { 
+    color:  whitesmoke;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: whitesmoke;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: whitesmoke;
+  }
+
+/* medi upit za book i kontakt */
+
+@media screen and (max-width: 600px) {
+    .contact {
+        width: 100%;
+    }
+
+    .book {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+}
+
+/* footer */
+.Footer {
+    background-color: rgb(189,189,189);
+}
+
+.footer {
+    height: 200px;
+    padding-top: 30px;
+    background-color: rgb(189,189,189);
+    ;
+    margin: 100px 30px 0;
+    display: grid;
+    grid-template-columns: 25% 40% 20%;
+    grid-template-rows: 120px 10px;
+    gap: 5%;
+    color: rgb(21, 55, 105);
+}
+.ilogo img{float: left;}
+.ilogo {
+    margin-top: 40px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.text {
+    grid-column: 2/ 3;
+    grid-row: 1 / 2;
+}
+
+.input {
+    margin-top: 20px;
+    grid-column: 3 / 4;
+    grid-row: 1/ 2;
+}
+
+.mreze {
+    grid-column: 2/3;
+    grid-row: 2 / 3;
+
+}
+
+#mailf {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(21, 55, 105);
+    color: rgb(21, 55, 105);
+    background-color: rgb(189,189,189)
+}
+#mailf::placeholder { 
+     color: rgb(21, 55, 105);
+    opacity: 1;
+  }
+  
+  #mailf:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(21, 55, 105);
+  }
+  
+  #mailf::-ms-input-placeholder { /* Microsoft Edge */
+     color: rgb(21, 55, 105);
+  }
+
+.mreze a {
+    color: rgb(21, 55, 105);
+    padding: 2px;
+}
+
+.mreze {
+    text-align: center;
+}
+
+.text {
+    width: 500px;
+    text-align: center;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1055px) {
+    .text {
+        width: 300px
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .text {
+        width: 200px
+    }
+
+    .footer {
+        height: 230px;
+        grid-template-rows: 160px 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        height: 540px;
+        padding-top: 30px;
+        background-color: rgb(189,189,189);
+        ;
+        margin: 100px 30px 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 120px 120px 20px;
+        gap: 10px;
+        color: rgb(21, 55, 105);
+    }
+
+    .ilogo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .text {
+        grid-column: 1 / 2;
+        grid-row: 2/ 3;
+    }
+
+    .input {
+        margin-top: 20px;
+        grid-column: 1 / 2;
+        grid-row: 3/ 4;
+    }
+
+    .mreze {
+        grid-column: 1 / 2;
+        grid-row: 4/ 5;
+
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+.mreze img{width: 5%;}
+
+/* btn za gori */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: goldenrod;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.7s;
+}
+
+#myBtn img {
+    height: 30px;
+}
+
+
+/* druga str */
+#Abt {
+    color: whitesmoke;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nass {
+    color: rgba(218, 165, 32, 0.833);
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.paragrafii {
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 15%;
+    font-size: large;
+}
+
+.paragrafiii {
+    color: whitesmoke;
+    text-align: center;
+    margin: 5px 15%;
+    font-size: large;
+}
+
+#nasslov {
+    color: rgba(218, 165, 32, 0.833);
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 110px;
+}
+
+.instruktori {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    color: whitesmoke;
+}
+
+.instruktor h3 {
+    color: goldenrod;
+    margin: 10px 0;
+}
+
+.instruktor h4 {
+    margin: 10px 0;
+}
+
+.instruktor p {
+    width: 70%;
+    margin: auto;
+}
+
+.instruktor {
+    width: 30%;
+    ;
+    text-align: center;
+}
+
+.slikeljudi {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.slikee {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 26px;
+}
+
+.slikica {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    gap: 20px;
+}
+
+
+.slikica img {
+    width: 100%;
+}
